@@ -1,12 +1,22 @@
 .s-promo {
   padding-top: 70px;
   box-shadow: 6px 6px 26px 15px rgba(0, 0, 0, 0.08);
+  @media (max-width: $phone-size){
+    padding-bottom: 19px;
+  }
   .promo {
     &__subscription {
       display: flex;
       justify-content: space-between;
+      @media (max-width: $phone-size) {
+        flex-direction: column;
+      }
       &-text {
         margin-left: 86px;
+        @media (max-width: $phone-size) {
+          margin-left: 0;
+          text-align: center;
+        }
       }
       &-title {
         font-weight: 500;
@@ -17,6 +27,9 @@
           font-size: 20px;
           line-height: 24px;
         }
+        @media (max-width: $phone-size) {
+          display: none;
+        }
       }
       &-subtitle {
         font-size: 18px;
@@ -26,6 +39,21 @@
         @media (max-width: $tablet-size) {
           font-size: 16px;
           line-height: 20px;
+          font-weight: 500;
+        }
+        @media (max-width: $phone-size) {
+          font-size: 26px;
+          line-height: 32px;
+        }
+        &--phone {
+          display: none;
+          @media (max-width: $phone-size) {
+            display: block;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+            margin-top: 8px;
+          }
         }
       }
       &-input {
@@ -38,8 +66,16 @@
           width: 278px;
           height: 34px;
         }
+        @media (max-width: $phone-size) {
+          width: 100%;
+          margin-top: 24px;
+          max-width: 330px;
+        }
         &-wrapper {
           padding-top: 14px;
+          @media (max-width: $phone-size) {
+            text-align: center;
+          }
         }
       }
       &-btn {
@@ -59,6 +95,12 @@
           margin-right: 26px;
           margin-left: 35px;
         }
+        @media (max-width: $phone-size) {
+          margin: 0;
+          margin-top: 32px;
+          max-width: 330px;
+          width: 330px;
+        }
       }
     }
     &__installment {
@@ -67,9 +109,21 @@
       @media (max-width: $tablet-size) {
         margin-top: 99px;
       }
+      @media (max-width: $phone-size) {
+        margin-top: 75px;
+        flex-direction: column;
+      }
       &-bank {
         &-name {
           margin-left: 102px;
+          @media (max-width: $phone-size) {
+            margin-left: 59px;
+          }
+          img {
+            @media (max-width: $phone-size) {
+              width: 199px;
+            }
+          }
         }
         &-img {
           img {
@@ -77,6 +131,10 @@
             height: 496px;
             @media (max-width: $tablet-size) {
               width: 532px;
+            }
+            @media (max-width: $phone-size) {
+              width: 349px;
+              height: 282px;
             }
           }
         }
@@ -89,6 +147,9 @@
           display: block;
           text-align: center;
         }
+        @media (max-width: $phone-size) {
+          margin-top: -50px;
+        }
       }
       &-title {
         font-weight: 700;
@@ -100,6 +161,11 @@
         @media (max-width: $tablet-size) {
           font-size: 50px;
         }
+        @media (max-width: $phone-size) {
+          margin-top: 0;
+          font-size: 36px;
+          line-height: 102.9%;
+        }
       }
       &-subtitle {
         font-size: 48px;
@@ -109,12 +175,21 @@
         @media (max-width: $tablet-size) {
           font-size: 35px;
         }
+        @media (max-width: $phone-size) {
+          font-size: 30px;
+          line-height: 130.9%;
+        }
       }
       &-text {
         font-size: 18px;
         line-height: 22px;
         letter-spacing: 0.02em;
         margin-top: 11px;
+        @media (max-width: $phone-size) {
+          font-size: 16px;
+          line-height: 20px;
+          margin-top: 8px;
+        }
       }
     }
   }

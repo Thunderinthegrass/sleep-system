@@ -1,9 +1,12 @@
 .s-location {
   padding-top: 100px;
   padding-bottom: 136px;
-  @media (max-width: $tablet-size){
+  @media (max-width: $tablet-size) {
     padding-top: 97px;
     padding-bottom: 26px;
+  }
+  @media (max-width: $phone-size) {
+    padding-top: 94px;
   }
   .location {
     background-image: url(../../../img/svg/path.svg);
@@ -17,13 +20,19 @@
       letter-spacing: 0.02em;
       text-transform: uppercase;
       text-align: center;
+      @media (max-width: $phone-size) {
+        font-size: 26px;
+        line-height: 32px;
+      }
     }
     &__inner {
       display: flex;
-      // justify-content: space-between;
       margin-top: 35px;
-      @media (max-width: $tablet-size){
+      @media (max-width: $tablet-size) {
         margin-top: 20px;
+      }
+      @media (max-width: $phone-size) {
+        flex-direction: column-reverse;
       }
     }
     &__branches {
@@ -32,8 +41,13 @@
       margin-left: 172px;
       padding-top: 230px;
       padding-right: 38px;
-      @media (max-width: $tablet-size){
+      @media (max-width: $tablet-size) {
         margin-left: 57px;
+      }
+      @media (max-width: $phone-size) {
+        padding-top: 27px;
+        padding-right: 10px;
+        margin-left: 10px;
       }
       &-title {
         position: relative;
@@ -46,6 +60,12 @@
         margin-top: 15px;
         text-transform: uppercase;
         cursor: pointer;
+        @media (max-width: $phone-size) {
+          margin-top: 14px;
+          width: 170px;
+          font-size: 16px;
+          line-height: 20px;
+        }
         &::after {
           position: absolute;
           content: "";
@@ -67,6 +87,9 @@
       &-info {
         width: 232px;
         margin-left: 29px;
+        @media (max-width: $phone-size) {
+          margin-left: 11px;
+        }
       }
       &-phone {
         font-weight: 500;
@@ -74,12 +97,21 @@
         line-height: 20px;
         letter-spacing: 0.01em;
         color: #060606;
+        @media (max-width: $phone-size) {
+          font-size: 12px;
+          line-height: 15px;
+        }
       }
       &-address {
         margin-top: 12px;
         font-size: 16px;
         line-height: 20px;
         letter-spacing: 0.01em;
+        @media (max-width: $phone-size) {
+          font-size: 12px;
+          line-height: 15px;
+          margin-top: 5px;
+        }
       }
     }
     &__map {
@@ -87,8 +119,12 @@
       height: 539px;
       border-radius: 8px;
       background-image: url(../../../img/content/location/map.jpg);
+      @media (max-width: $phone-size) {
+        height: 453px;
+        width: 100%;
+      }
     }
-    &__directions {
+    &__directions-btn {
       position: absolute;
       right: 29px;
       bottom: 151px;
@@ -101,6 +137,13 @@
       border-radius: 18px;
       background: $orange;
       cursor: pointer;
+      @media (max-width: $phone-size) {
+        font-size: 12px;
+        line-height: 15px;
+        padding: 6px 4px 12px 5px;
+        right: 37px;
+        bottom: -5px;
+      }
     }
   }
 }
