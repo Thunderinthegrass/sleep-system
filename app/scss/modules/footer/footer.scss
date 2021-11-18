@@ -8,6 +8,9 @@
       padding-top: 33px;
       padding-bottom: 50px;
     }
+    @media (max-width: $phone-size) {
+      display: none;
+    }
     .container {
       display: flex;
       justify-content: space-between;
@@ -114,6 +117,96 @@
       margin-left: 60px;
     }
   }
+  &__mobile {
+    color: #fff;
+    padding-top: 49px;
+    &-item {
+      padding-left: 12px;
+    }
+    &-contacts {
+      margin-top: 37px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &-nav {
+      &-title {
+        position: relative;
+        display: inline-block;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        margin-top: 7px;
+        padding-right: 17px;
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 10px;
+          height: 6px;
+          background-image: url(../img/svg/angle-bottom.svg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        }
+      }
+      &-list {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        display: none;
+        &--active {
+          display: block;
+        }
+      }
+      &-item {
+        margin-top: 4px;
+      }
+      &-link {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.02em;
+        color: #fff;
+      }
+    }
+    &-phone {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      color: #fff;
+    }
+    &-mail {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      color: #fff;
+      margin-top: 8px;
+    }
+    &-social{
+      width: 100px;
+      height: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+    &-whatsapp-link {
+      margin-top: 17px;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 0.02em;
+      padding: 8px 8px 12px;
+      border: 1px solid #FF8219;
+      border-radius: 18px;
+      color: #fff;
+    }
+  }
   &__bottom {
     background: #fff;
     padding-top: 24px;
@@ -122,14 +215,28 @@
       padding-top: 19px;
       padding-left: 64px;
     }
+    @media (max-width: $phone-size) {
+      background: #818a81;
+      color: #fff;
+      padding: 0;
+      padding-left: 12px;
+      padding-right: 27px;
+      padding-bottom: 28px;
+    }
     .container {
       display: flex;
       justify-content: space-between;
       padding-right: 158px;
+      @media (max-width: $phone-size) {
+        padding-right: 0;
+      }
     }
     &-item {
       &:first-child {
         width: 466px;
+        @media (max-width: $phone-size) {
+          display: none;
+        }
       }
       &:nth-child(2) {
         span {
@@ -150,17 +257,35 @@
           letter-spacing: 0.02em;
           margin-top: 7px;
           color: rgba(6, 6, 6, 0.81);
+          @media (max-width: $phone-size) {
+            color: rgba(255, 255, 255, 0.81);
+            font-size: 12px;
+            line-height: 15px;
+          }
+        }
+        @media (max-width: $phone-size) {
+          margin-top: 32px;
         }
       }
-      .yandex-market-link{
-        img{
+      .yandex-market-link {
+        img {
           width: 170px;
           height: 85px;
           margin-top: 16px;
           margin-left: 46px;
-          @media (max-width: $tablet-size){
+          @media (max-width: $tablet-size) {
             width: 137px;
             height: 68px;
+          }
+          @media (max-width: $phone-size) {
+            display: none;
+          }
+        }
+        &-mobile {
+          display: none;
+          margin-top: 49px;
+          @media (max-width: $phone-size) {
+            display: block;
           }
         }
       }
@@ -183,6 +308,14 @@
       img {
         width: 131px;
       }
+    }
+  }
+  @media (max-width: $phone-size) {
+    &__logo {
+      display: none;
+    }
+    .copyright {
+      display: none;
     }
   }
 }

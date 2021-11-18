@@ -2109,6 +2109,12 @@ button {
   }
 }
 
+@media (max-width: 375px) {
+  .footer__main {
+    display: none;
+  }
+}
+
 .footer__main .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2258,6 +2264,127 @@ button {
   }
 }
 
+.footer__mobile {
+  color: #fff;
+  padding-top: 49px;
+}
+
+.footer__mobile-item {
+  padding-left: 12px;
+}
+
+.footer__mobile-contacts {
+  margin-top: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer__mobile-nav-title {
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  margin-top: 7px;
+  padding-right: 17px;
+}
+
+.footer__mobile-nav-title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 10px;
+  height: 6px;
+  background-image: url(../img/svg/angle-bottom.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer__mobile-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10px;
+  display: none;
+}
+
+.footer__mobile-nav-list--active {
+  display: block;
+}
+
+.footer__mobile-nav-item {
+  margin-top: 4px;
+}
+
+.footer__mobile-nav-link {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.footer__mobile-phone {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.footer__mobile-mail {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-top: 8px;
+}
+
+.footer__mobile-social {
+  width: 100px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.footer__mobile-whatsapp-link {
+  margin-top: 17px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  padding: 8px 8px 12px;
+  border: 1px solid #FF8219;
+  border-radius: 18px;
+  color: #fff;
+}
+
 .footer__bottom {
   background: #fff;
   padding-top: 24px;
@@ -2271,6 +2398,17 @@ button {
   }
 }
 
+@media (max-width: 375px) {
+  .footer__bottom {
+    background: #818a81;
+    color: #fff;
+    padding: 0;
+    padding-left: 12px;
+    padding-right: 27px;
+    padding-bottom: 28px;
+  }
+}
+
 .footer__bottom .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2281,8 +2419,20 @@ button {
   padding-right: 158px;
 }
 
+@media (max-width: 375px) {
+  .footer__bottom .container {
+    padding-right: 0;
+  }
+}
+
 .footer__bottom-item:first-child {
   width: 466px;
+}
+
+@media (max-width: 375px) {
+  .footer__bottom-item:first-child {
+    display: none;
+  }
 }
 
 .footer__bottom-item:nth-child(2) span {
@@ -2307,6 +2457,20 @@ button {
   color: rgba(6, 6, 6, 0.81);
 }
 
+@media (max-width: 375px) {
+  .footer__bottom-item:nth-child(2) .privacy-policy {
+    color: rgba(255, 255, 255, 0.81);
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer__bottom-item:nth-child(2) {
+    margin-top: 32px;
+  }
+}
+
 .footer__bottom-item .yandex-market-link img {
   width: 170px;
   height: 85px;
@@ -2318,6 +2482,23 @@ button {
   .footer__bottom-item .yandex-market-link img {
     width: 137px;
     height: 68px;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer__bottom-item .yandex-market-link img {
+    display: none;
+  }
+}
+
+.footer__bottom-item .yandex-market-link-mobile {
+  display: none;
+  margin-top: 49px;
+}
+
+@media (max-width: 375px) {
+  .footer__bottom-item .yandex-market-link-mobile {
+    display: block;
   }
 }
 
@@ -2340,5 +2521,14 @@ button {
 @media (max-width: 960px) {
   .footer__logo img {
     width: 131px;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer__logo {
+    display: none;
+  }
+  .footer .copyright {
+    display: none;
   }
 }
