@@ -61,12 +61,6 @@
       }
       &:first-child {
         margin-left: 0;
-        @media (max-width: $tablet-size) {
-          display: none;
-        }
-        @media (max-width: $phone-size) {
-          display: block;
-        }
       }
       &__img-wrapper {
         border-radius: 5px;
