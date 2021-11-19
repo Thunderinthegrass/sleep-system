@@ -1,0 +1,131 @@
+@media (max-width: 1100px) {
+  .header {
+    &__top {
+      height: 107px;
+    }
+    &__logo-wrapper {
+      margin-left: 22px;
+      margin-top: 29px;
+      img {
+        width: 215px;
+        // height: 48px;
+      }
+    }
+    &__phones {
+      align-items: center;
+    }
+    &-search {
+      margin-top: 49px;
+    }
+    &__buttons {
+      margin-top: 31px;
+      margin-left: 80px;
+    }
+  }
+}
+@media (max-width: 1030px) {
+  .header {
+    &__top {
+      justify-content: space-between;
+      padding-right: 15px;
+    }
+    &__nav {
+      &-list {
+        width: 100%;
+        padding: 0 15px;
+        justify-content: space-between;
+      }
+      &-item {
+        margin: 0;
+      }
+    }
+    &__buttons {
+      margin-left: 29px;
+    }
+  }
+}
+@media (max-width: 950px) {
+  .header {
+    &__phones {
+      display: none;
+    }
+    &__buttons {
+      margin-left: 0;
+    }
+    &-search {
+      margin-left: 19px;
+    }
+  }
+}
+@media (max-width: 810px) {
+  .header {
+    &__top {
+      height: 64px;
+    }
+    &__logo-wrapper {
+      margin-top: 13px;
+      margin-left: 9px;
+      width: 170px;
+      height: 38px;
+      img {
+        width: 170px;
+        // height: 38px;
+      }
+    }
+    &__since {
+      display: block;
+    }
+    &__search {
+      margin-top: 19px;
+    }
+    &__buttons {
+      display: none;
+    }
+    &__nav {
+      display: none;
+    }
+    &__mobile-menu-btn {
+      display: block;
+      margin-top: 21px;
+      margin-left: 23px;
+    }
+  }
+}
+@media (max-width: 580px) {
+  .header {
+    &__since {
+      white-space: nowrap;
+    }
+    &-search {
+      width: 24px;
+      &__input {
+        display: none;
+      }
+      &__btn {
+        .search-icon {
+          height: 24px;
+          fill: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $phone-size) {
+  .header {
+    &__nav {
+      display: none;
+    }
+    &__since {
+      margin-right: 0;
+    }
+  }
+}
+@media (max-width: 374px){
+  .header__logo-wrapper{
+    margin-top: 20px;
+    img{
+      width: 120px;
+    }
+  }
+}
