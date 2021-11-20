@@ -19,7 +19,7 @@
       .product-prev {
         margin: 0;
         margin: 25px 7px;
-        &:first-child{
+        &:first-child {
           display: block;
         }
         &:nth-child(2) {
@@ -35,6 +35,8 @@
   @media (max-width: $phone-size) {
     .hits {
       .product-prev {
+        max-width: 165px;
+        height: 260px;
         margin: 0;
         margin-top: 29px;
         &:nth-child(2) {
@@ -44,6 +46,101 @@
         &__wrapper {
           justify-content: space-between;
           padding: 0;
+        }
+      }
+    }
+  }
+  @media (max-width: 367px) {
+    .hits {
+      .product-prev {
+        max-width: 250px;
+        height: 356px;
+        padding-left: 14px;
+        padding-top: 25px;
+        &__wrapper {
+          justify-content: center;
+        }
+        &__img-wrapper {
+          width: 188px;
+          height: 143px;
+        }
+        &__sale {
+          font-weight: 500;
+          font-size: 36px;
+          line-height: 43.88px;
+        }
+        &__star-list {
+          li {
+            img {
+              width: 18px;
+              height: 17px;
+            }
+          }
+        }
+        &__title {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 22px;
+          letter-spacing: 0.01em;
+        }
+        &__subtitle {
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 0.01em;
+          margin-top: 10px;
+        }
+        &__size {
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 0.01em;
+          color: rgba(6, 6, 6, 0.88);
+          margin-top: 6px;
+        }
+        &__price {
+          margin-top: 10px;
+          &-old {
+            font-size: 18px;
+            line-height: 22px;
+          }
+          &-current {
+            font-size: 24px;
+            line-height: 29px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        &__buttons {
+          right: 21px;
+          bottom: 24px;
+          flex-direction: row;
+        }
+        &__compare {
+          &-icon {
+            width: 18px;
+            height: 19px;
+          }
+        }
+        &__favorites {
+          margin: 0;
+          margin-left: 12px;
+          width: 20px;
+          height: 16px;
+          &-icon {
+            width: 20px;
+            height: 16px;
+          }
+        }
+        &__basket {
+          margin: 0;
+          margin-left: 7px;
+          width: 25px;
+          height: 20px;
+          margin-top: 2px;
+          &-icon {
+            width: 25px;
+            height: 20px;
+          }
         }
       }
     }
