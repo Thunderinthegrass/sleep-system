@@ -68,29 +68,33 @@ button {
   // padding: 0 15px;
   width: 100%;
 }
-// .fixed {
-//   overflow: hidden;
-// }
-// .d-none {
-//   display: none;
-// }
-// .border--active{
-//   border-color: $sunset-orange;
-// }
-// .op0 {
-//   opacity: 0;
-// }
-// .color--active {
-//   border: 1px solid $sunset-orange;
-// }
-// .anim-opasity {
-//   animation: opasity0 0.3s linear forwards;
-// }
-// @keyframes opasity0 {
-//   0% {
-//     opacity: 1;
-//   }
-//   100% {
-//     opacity: 0;
-//   }
-// }
+.breadcrumbs {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  margin-top: 26px;
+  color: $orange;
+  &__list {
+    display: flex;
+    margin-left: 86px;
+  }
+  &__link {
+    color: $orange;
+    position: relative;
+    padding-right: 17px;
+    margin-right: 13px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 6px;
+      height: 12px;
+      right: 0;
+      top: 4px;
+      background-image: url(../img/svg/breadcrumbs-arrow.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
