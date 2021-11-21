@@ -194,10 +194,23 @@
           margin-top: 20px;
           overflow: hidden;
         }
-        &:last-child {
+        &:nth-child(3) {
           position: absolute;
           top: 0;
           left: 252px;
+        }
+        &__mask {
+          display: block;
+        }
+      }
+      &__link {
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 20px;
+        padding: 9px 17px 13px 18px;
+        border-radius: 20px;
+        &-wrapper {
+          margin-top: 20px;
         }
       }
     }

@@ -1,11 +1,11 @@
 .s-location {
   padding-top: 100px;
   padding-bottom: 136px;
-  @media (max-width: $tablet-size) {
+  @media (max-width: $tablet-size-1200) {
     padding-top: 97px;
     padding-bottom: 26px;
   }
-  @media (max-width: $phone-size) {
+  @media (max-width: 570px) {
     padding-top: 94px;
   }
   .location {
@@ -20,7 +20,7 @@
       letter-spacing: 0.02em;
       text-transform: uppercase;
       text-align: center;
-      @media (max-width: $phone-size) {
+      @media (max-width: 570px) {
         font-size: 26px;
         line-height: 32px;
       }
@@ -28,10 +28,14 @@
     &__inner {
       display: flex;
       margin-top: 35px;
-      @media (max-width: $tablet-size) {
+      @media (max-width: $tablet-size-1200) {
         margin-top: 20px;
       }
-      @media (max-width: $phone-size) {
+      @media (max-width: 900px){
+        align-items: center;
+        flex-direction: column-reverse;
+      }
+      @media (max-width: 570px) {
         flex-direction: column-reverse;
       }
     }
@@ -41,11 +45,13 @@
       margin-left: 172px;
       padding-top: 230px;
       padding-right: 38px;
-      @media (max-width: $tablet-size) {
+      @media (max-width: $tablet-size-1200) {
         margin-left: 57px;
       }
-      @media (max-width: $phone-size) {
+      @media (max-width: 900px){
         padding-top: 27px;
+      }
+      @media (max-width: 570px) {
         padding-right: 10px;
         margin-left: 10px;
       }
@@ -58,13 +64,20 @@
         color: $orange;
         width: 211px;
         margin-top: 15px;
+        padding-right: 11px;
         text-transform: uppercase;
         cursor: pointer;
-        @media (max-width: $phone-size) {
+        @media (max-width: 570px) {
           margin-top: 14px;
           width: 170px;
           font-size: 16px;
           line-height: 20px;
+        }
+        @media (max-width: 350px){
+          font-size: 14px;
+          line-height: 18px;
+          margin-top: 10px;
+          width: auto;
         }
         &::after {
           position: absolute;
@@ -87,8 +100,9 @@
       &-info {
         width: 232px;
         margin-left: 29px;
-        @media (max-width: $phone-size) {
+        @media (max-width: 570px) {
           margin-left: 11px;
+          width: auto;
         }
       }
       &-phone {
@@ -97,7 +111,7 @@
         line-height: 20px;
         letter-spacing: 0.01em;
         color: #060606;
-        @media (max-width: $phone-size) {
+        @media (max-width: 570px) {
           font-size: 12px;
           line-height: 15px;
         }
@@ -107,7 +121,7 @@
         font-size: 16px;
         line-height: 20px;
         letter-spacing: 0.01em;
-        @media (max-width: $phone-size) {
+        @media (max-width: 570px) {
           font-size: 12px;
           line-height: 15px;
           margin-top: 5px;
@@ -115,19 +129,19 @@
       }
     }
     &__map {
-      width: 535px;
+      max-width: 535px;
       height: 539px;
+      overflow: hidden;
       border-radius: 8px;
-      background-image: url(../../../img/content/location/map.jpg);
-      @media (max-width: $phone-size) {
+      @media (max-width: 900px){
         height: 453px;
         width: 100%;
       }
+      @media (max-width: $phone-size){
+        height: 279px;
+      }
     }
     &__directions-btn {
-      position: absolute;
-      right: 29px;
-      bottom: 151px;
       font-weight: 500;
       font-size: 18px;
       line-height: 22px;
@@ -135,14 +149,19 @@
       color: #ffffff;
       padding: 8px 20px 13px 20px;
       border-radius: 18px;
+      margin-top: 27px;
       background: $orange;
+      white-space: nowrap;
       cursor: pointer;
-      @media (max-width: $phone-size) {
+      @media (max-width: 900px){
+        margin-top: 18px;
+      }
+      @media (max-width: 570px) {
         font-size: 12px;
         line-height: 15px;
         padding: 6px 4px 12px 5px;
         right: 37px;
-        bottom: -5px;
+        // bottom: -5px;
       }
     }
   }

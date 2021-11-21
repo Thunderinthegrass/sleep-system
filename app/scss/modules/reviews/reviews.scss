@@ -42,9 +42,6 @@
       color: #060606;
       &:first-child {
         margin-left: 0;
-        @media (max-width: $phone-size) {
-          display: none;
-        }
       }
       &__img-wrapper {
         margin: 19px 0 0 13px;
@@ -115,7 +112,7 @@
       &__mask {
         display: none;
         position: absolute;
-        top: 98px;
+        top: 0px;
         left: 269px;
         width: 223px;
         height: 273px;
@@ -125,9 +122,6 @@
           rgba(196, 196, 196, 0) 146.19%,
           rgba(255, 255, 255, 0) 146.19%
         );
-        @media (max-width: $phone-size) {
-          display: block;
-        }
       }
     }
     &__link {
@@ -141,22 +135,10 @@
       letter-spacing: 0.02em;
       color: #ffffff;
       margin: 0 auto;
-      @media (max-width: $phone-size) {
-        font-size: 18px;
-        line-height: 22px;
-      }
-      @media (max-width: $phone-size) {
-        margin-top: 20px;
-        padding: 9px 17px 13px 18px;
-        border-radius: 20px;
-      }
       &-wrapper {
         display: flex;
         justify-content: center;
         margin-top: 56px;
-        @media (max-width: $phone-size) {
-          margin-top: 20px;
-        }
       }
     }
   }
