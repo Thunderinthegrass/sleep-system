@@ -1,19 +1,21 @@
 .s-promo {
   padding-top: 70px;
   box-shadow: 6px 6px 26px 15px rgba(0, 0, 0, 0.08);
-  @media (max-width: $phone-size){
+  @media (max-width: $phone-size) {
     padding-bottom: 19px;
+    box-shadow: none;
+    padding-top: 35px;
   }
   .promo {
     &__subscription {
       display: flex;
       justify-content: space-between;
-      @media (max-width: $phone-size) {
+      @media (max-width: 955px) {
         flex-direction: column;
       }
       &-text {
         margin-left: 86px;
-        @media (max-width: $phone-size) {
+        @media (max-width: 955px) {
           margin-left: 0;
           text-align: center;
         }
@@ -23,7 +25,7 @@
         font-size: 24px;
         line-height: 29px;
         letter-spacing: 0.02em;
-        @media (max-width: $tablet-size) {
+        @media (max-width: $tablet-size-1175) {
           font-size: 20px;
           line-height: 24px;
         }
@@ -36,7 +38,7 @@
         line-height: 22px;
         letter-spacing: 0.02em;
         padding-top: 9px;
-        @media (max-width: $tablet-size) {
+        @media (max-width: $tablet-size-1175) {
           font-size: 16px;
           line-height: 20px;
           font-weight: 500;
@@ -62,19 +64,23 @@
         border: 1px solid #ff8219;
         border-radius: 18px;
         padding-left: 20px;
-        @media (max-width: $tablet-size) {
+        @media (max-width: $tablet-size-1175) {
           width: 278px;
           height: 34px;
         }
-        @media (max-width: $phone-size) {
+        @media (max-width: 550px) {
           width: 100%;
           margin-top: 24px;
           max-width: 330px;
         }
         &-wrapper {
           padding-top: 14px;
-          @media (max-width: $phone-size) {
+          @media (max-width: 955px) {
             text-align: center;
+          }
+          @media (max-width: 360px){
+            padding-left: 15px;
+            padding-right: 15px;
           }
         }
       }
@@ -91,36 +97,46 @@
         margin-right: 86px;
         margin-left: 29px;
         cursor: pointer;
-        @media (max-width: $tablet-size) {
-          margin-right: 26px;
+        @media (max-width: $tablet-size-1175) {
+          margin-right: 50px;
           margin-left: 35px;
         }
-        @media (max-width: $phone-size) {
+        @media (max-width: 1000px){
+          margin-right: 26px;
+          margin-left: 30px;
+        }
+        @media (max-width: 955px){
+          margin-right: 26px;
+          margin-left: 30px;
+        }
+        @media (max-width: 550px) {
           margin: 0;
           margin-top: 32px;
-          max-width: 330px;
           width: 330px;
+        }
+        @media (max-width: 360px){
+          width: 100%;
         }
       }
     }
     &__installment {
       display: flex;
       margin-top: 172px;
-      @media (max-width: $tablet-size) {
+      @media (max-width: $tablet-size-1175) {
         margin-top: 99px;
       }
-      @media (max-width: $phone-size) {
+      @media (max-width: 955px) {
         margin-top: 75px;
         flex-direction: column;
       }
       &-bank {
         &-name {
           margin-left: 102px;
-          @media (max-width: $phone-size) {
+          @media (max-width: 550px) {
             margin-left: 59px;
           }
           img {
-            @media (max-width: $phone-size) {
+            @media (max-width: 550px) {
               width: 199px;
             }
           }
@@ -129,12 +145,16 @@
           img {
             width: 588px;
             height: 496px;
-            @media (max-width: $tablet-size) {
+            @media (max-width: $tablet-size-1175) {
               width: 532px;
             }
-            @media (max-width: $phone-size) {
+            @media (max-width: 550px) {
               width: 349px;
               height: 282px;
+              transform: translateX(-8px);
+            }
+            @media (max-width: 360px){
+              width: 320px;
             }
           }
         }
@@ -147,7 +167,11 @@
           display: block;
           text-align: center;
         }
-        @media (max-width: $phone-size) {
+        @media (max-width: 955px){
+          margin-top: -150px;
+          padding-bottom: 19px;
+        }
+        @media (max-width: 550px) {
           margin-top: -50px;
         }
       }
@@ -158,10 +182,10 @@
         text-align: center;
         letter-spacing: 0.01em;
         color: $orange;
-        @media (max-width: $tablet-size) {
+        @media (max-width: $tablet-size-1175) {
           font-size: 50px;
         }
-        @media (max-width: $phone-size) {
+        @media (max-width: 550px) {
           margin-top: 0;
           font-size: 36px;
           line-height: 102.9%;
@@ -172,10 +196,10 @@
         font-weight: 500;
         line-height: 45px;
         letter-spacing: 0.01em;
-        @media (max-width: $tablet-size) {
+        @media (max-width: $tablet-size-1175) {
           font-size: 35px;
         }
-        @media (max-width: $phone-size) {
+        @media (max-width: 550px) {
           font-size: 30px;
           line-height: 130.9%;
         }
@@ -185,7 +209,7 @@
         line-height: 22px;
         letter-spacing: 0.02em;
         margin-top: 11px;
-        @media (max-width: $phone-size) {
+        @media (max-width: 550px) {
           font-size: 16px;
           line-height: 20px;
           margin-top: 8px;
