@@ -234,6 +234,19 @@
         letter-spacing: 0.01em;
         border: 0.5px solid #ff8219;
         border-radius: 18px;
+        position: relative;
+        cursor: pointer;
+        ::after{
+           position: absolute;
+           content: "";
+           height: 9px;
+           width: 14px;
+           right: 9px;
+           top: 7px;
+           background-image: url(../img/svg/products-page/filter-arrow.svg);
+           background-repeat: no-repeat;
+           background-size: contain;
+        }
       }
     }
   }
