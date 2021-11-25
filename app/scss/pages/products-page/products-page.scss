@@ -1,10 +1,11 @@
+@import "../../modules/double-slider/double-slider";
 .products-page {
   &__title {
     .title {
       margin: 0;
       margin-left: 82px;
-      padding-top: 31px;
-      padding-bottom: 24px;
+      padding-top: 28px;
+      padding-bottom: 15px;
       font-weight: 500;
       font-size: 48px;
       line-height: 59px;
@@ -31,6 +32,7 @@
     &__container {
       padding-left: 86px;
       padding-right: 33px;
+      width: 330px;
     }
     &__item {
       font-size: 16px;
@@ -41,6 +43,14 @@
       padding-top: 23px;
       .products-filters__list {
         margin-top: 23px;
+      }
+    }
+    &__price {
+      padding-top: 31px;
+      .products-filters__title-wrapper {
+        &::after {
+          display: none;
+        }
       }
     }
     &__springs {
@@ -71,6 +81,22 @@
       padding-top: 20px;
       .products-filters__list {
         margin-top: 15px;
+      }
+    }
+    &__height {
+      padding-top: 22px;
+      .products-filters__title-wrapper {
+        &::after {
+          display: none;
+        }
+      }
+    }
+    &__weight {
+      padding-top: 22px;
+      .products-filters__title-wrapper {
+        &::after {
+          display: none;
+        }
       }
     }
     &__list {
@@ -142,7 +168,7 @@
         margin-top: 0;
       }
       &-wrapper {
-        margin-top: 25px;
+        margin-top: 20px;
       }
       &-input {
         width: 84px;
@@ -236,35 +262,37 @@
         border-radius: 18px;
         position: relative;
         cursor: pointer;
-        ::after{
-           position: absolute;
-           content: "";
-           height: 9px;
-           width: 14px;
-           right: 9px;
-           top: 7px;
-           background-image: url(../img/svg/products-page/filter-arrow.svg);
-           background-repeat: no-repeat;
-           background-size: contain;
+        ::after {
+          position: absolute;
+          content: "";
+          height: 9px;
+          width: 14px;
+          right: 9px;
+          top: 7px;
+          background-image: url(../img/svg/products-page/filter-arrow.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
         }
       }
     }
   }
   &__catalog {
-    &-wrapper{
+    &-wrapper {
       display: flex;
       flex-wrap: wrap;
-      padding-left: 18px;
-      padding-right: 86px;
-      justify-content: space-between;
+      padding-left: 8px;
+      justify-content: flex-start;
       .product-prev {
-        width: 231px;
+        width: 242px;
         height: 356px;
         position: relative;
         box-shadow: 5px 5px 30px rgba(83, 81, 79, 0.1);
+        margin: 0;
         padding-left: 14px;
         padding-top: 25px;
-        margin-top: 47px;
+        margin-left: 10px;
+        margin-right: 11px;
+        margin-top: 40px;
         border-radius: 8px;
         @media (max-width: $tablet-size) {
           margin-left: 29px;
@@ -283,7 +311,7 @@
           overflow: hidden;
           width: 188px;
           height: 143px;
-          background-image: url(../img/content/hits/product-prev-img.jpg);
+          // background-image: url(../img/content/hits/product-prev-img.jpg);
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
@@ -462,6 +490,28 @@
           }
         }
       }
+    }
+  }
+  .reset-filter-btn {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    background: transparent;
+    padding: 0;
+    padding-right: 40px;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    &::after{
+      position: absolute;
+      content: "";
+      width: 24px;
+      height: 22px;
+      right: 0;
+      background-image: url(../../../img/svg/products-page/reset.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
 }

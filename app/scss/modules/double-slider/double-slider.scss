@@ -1,0 +1,147 @@
+.price-slider,
+.height-slider,
+.weight-slider {
+  min-height: 19px;
+  position: relative;
+  margin-top: 19px;
+  &__input-wrapper {
+    position: relative;
+    &:first-child {
+      &::before {
+        position: absolute;
+        content: "от";
+        left: 7px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 14px;
+        letter-spacing: 0.01em;
+        color: rgba(6, 6, 6, 0.72);
+        z-index: 1;
+      }
+    }
+    &:nth-child(2) {
+      &::before {
+        position: absolute;
+        content: "до";
+        left: 7px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 14px;
+        letter-spacing: 0.01em;
+        color: rgba(6, 6, 6, 0.72);
+        z-index: 1;
+      }
+    }
+  }
+  &__inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+    input {
+      position: relative;
+      width: 91px;
+      height: 25px;
+      border: 0.5px solid #ff8219;
+      box-sizing: border-box;
+      border-radius: 18px;
+      padding-left: 7px;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.01em;
+      color: rgba(6, 6, 6, 0.72);
+      padding-left: 36px;
+    }
+  }
+}
+.height-slider {
+  &__input-wrapper {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "см";
+      right: 7px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px;
+      letter-spacing: 0.01em;
+      color: rgba(6, 6, 6, 0.72);
+      z-index: 1;
+    }
+  }
+  .right-dot{
+    right: 0;
+  }
+  .line-2{
+    width: 100%;
+  }
+}
+.weight-slider {
+  &__input-wrapper {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "кг";
+      right: 7px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px;
+      letter-spacing: 0.01em;
+      color: rgba(6, 6, 6, 0.72);
+      z-index: 1;
+    }
+  }
+  .right-dot{
+    right: 0;
+  }
+  .line-2{
+    width: 100%;
+  }
+}
+
+.line-1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 4px;
+  background: #c4c4c4;
+  border-radius: 5px;
+}
+
+.line-2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 154px;
+  height: 4px;
+  background: $orange;
+}
+
+.left-dot {
+  position: absolute;
+  left: 0;
+}
+.price-slider{
+  .right-dot {
+    left: 151px;
+  }
+}
+.right-dot {
+  position: absolute;
+}
+
+.dot {
+  width: 19px;
+  height: 19px;
+  border-radius: 100%;
+  background: $orange;
+  top: 0;
+  cursor: pointer;
+}
+.products-filters__price{
+  &__title-wrapper{
+    &::after{
+      display: none;
+    }
+  }
+}

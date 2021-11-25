@@ -70,10 +70,10 @@ button {
 }
 .breadcrumbs {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 22px;
   letter-spacing: 0.01em;
-  margin-top: 26px;
+  margin-top: 23px;
   color: $orange;
   &__list {
     display: flex;
@@ -82,15 +82,15 @@ button {
   &__link {
     color: $orange;
     position: relative;
-    padding-right: 17px;
-    margin-right: 13px;
+    padding-right: 35px;
+    margin-right: 22px;
     &::after {
       position: absolute;
       content: "";
-      width: 6px;
-      height: 12px;
+      width: 8px;
+      height: 17px;
       right: 0;
-      top: 4px;
+      top: 0;
       background-image: url(../img/svg/breadcrumbs-arrow.svg);
       background-repeat: no-repeat;
       background-size: cover;

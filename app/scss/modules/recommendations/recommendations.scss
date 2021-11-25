@@ -9,4 +9,180 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
   }
+  &__wrapper {
+    margin-left: 113px;
+    padding-top: 51px;
+    display: flex;
+  }
+  &__item{
+    margin-left: 50px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  .product-prev {
+    width: 284px;
+    height: 331px;
+    position: relative;
+    box-shadow: 6px 6px 20px 10px rgba(0, 0, 0, 0.13);
+    padding-left: 15px;
+    padding-top: 40px;
+    border-radius: 8px;
+    @media (max-width: $tablet-size) {
+      margin-left: 29px;
+    }
+    @media (max-width: $phone-size) {
+      margin: 0;
+      margin-top: 29px;
+      padding: 0;
+      padding-left: 10px;
+    }
+    &__img-wrapper {
+      border-radius: 5px;
+      overflow: hidden;
+      width: 263px;
+      height: 135px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      @media (max-width: $phone-size) {
+        width: 141px;
+        height: 107px;
+      }
+    }
+    &__sale {
+      position: absolute;
+      left: -10px;
+      top: 0px;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0.01em;
+      color: #ffffff;
+      background: #ff8219;
+      border-radius: 20px;
+      padding: 0 9px 0 13px;
+      @media (max-width: $phone-size) {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        top: -9px;
+        left: -9px;
+      }
+    }
+    &__title {
+      display: block;
+      margin-top: 9px;
+      color: #060606;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0.01em;
+      @media (max-width: $phone-size) {
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.01em;
+        margin-top: 3px;
+      }
+    }
+    &__price {
+      display: inline-block;
+      position: absolute;
+      left: 15px;
+      bottom: 22px;
+      @media (max-width: $phone-size) {
+        margin-top: 21px;
+      }
+      &-old {
+        display: block;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        text-decoration: line-through;
+        color: rgba(0, 0, 0, 0.47);
+        @media (max-width: $phone-size) {
+          font-size: 12px;
+          line-height: 15px;
+        }
+      }
+      &-current {
+        display: block;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.01em;
+        margin-top: -5px;
+        @media (max-width: $phone-size) {
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+    }
+    &__buttons {
+      display: flex;
+      position: absolute;
+      right: 18px;
+      bottom: 27px;
+      @media (max-width: $phone-size) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 14px;
+        bottom: 10px;
+      }
+    }
+    &__compare {
+      width: 21px;
+      height: 23px;
+      &-icon {
+        width: 21px;
+        height: 23px;
+        @media (max-width: $phone-size) {
+          width: 16px;
+          height: 17px;
+        }
+      }
+    }
+    &__favorites {
+      margin-left: 12px;
+      width: 24px;
+      height: 20px;
+      @media (max-width: $phone-size) {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+      &-icon {
+        width: 24px;
+        height: 20px;
+      }
+    }
+    &__basket {
+      position: relative;
+      margin-left: 7px;
+      width: 30px;
+      height: 24px;
+      @media (max-width: $phone-size) {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+      &-icon {
+        width: 30px;
+        height: 24px;
+      }
+      &-bell {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: -4px;
+        top: -1px;
+        width: 10px;
+        height: 10px;
+        background: $orange;
+        border-radius: 50%;
+        color: #fff;
+      }
+    }
+  }
 }
