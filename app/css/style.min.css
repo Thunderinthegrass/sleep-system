@@ -3235,7 +3235,7 @@ button {
 }
 
 .height-slider {
-  margin-top: 18px;
+  margin-top: 19px;
 }
 
 .height-slider__input-wrapper {
@@ -3413,7 +3413,7 @@ button {
 }
 
 .products-page .products-filters__springs {
-  padding-top: 18px;
+  padding-top: 15px;
 }
 
 .products-page .products-filters__springs .products-filters__list {
@@ -3513,10 +3513,10 @@ button {
 .products-page .products-filters__title-wrapper::after {
   position: absolute;
   content: "";
-  width: 14px;
-  height: 9px;
-  right: 0;
-  top: 50%;
+  width: 17px;
+  height: 11px;
+  right: -1px;
+  top: 58%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -3680,7 +3680,6 @@ button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-left: 11px;
-  padding-top: 15px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -3694,10 +3693,10 @@ button {
           box-shadow: none;
   margin: 0;
   padding-left: 14px;
-  padding-top: 32px;
+  padding-top: 26px;
   margin-left: 8px;
-  margin-right: 11px;
-  margin-top: 26px;
+  margin-right: 12px;
+  margin-top: 20px;
   border-radius: 8px;
 }
 
@@ -3732,7 +3731,7 @@ button {
   width: 224px;
   height: 1px;
   right: 10px;
-  bottom: -34px;
+  bottom: -22px;
   background: #000;
 }
 
@@ -3755,7 +3754,7 @@ button {
 
 .products-page__catalog-wrapper .product-prev__sale {
   position: absolute;
-  left: -1px;
+  left: 1px;
   top: -13px;
   font-weight: 500;
   font-size: 36px;
@@ -3781,7 +3780,7 @@ button {
 }
 
 .products-page__catalog-wrapper .product-prev__star-list li {
-  margin-left: 1.5px;
+  margin-left: 1px;
 }
 
 @media (max-width: 375px) {
@@ -3992,6 +3991,30 @@ button {
   color: #fff;
 }
 
+.products-page__catalog-wrapper .product--sale {
+  margin-top: 44px;
+}
+
+.products-page__catalog-wrapper .product--sale::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 333px;
+  right: -10px;
+  top: 5px;
+  background: #000;
+}
+
+.products-page__catalog-wrapper .product--sale::after {
+  position: absolute;
+  content: "";
+  width: 224px;
+  height: 1px;
+  right: 10px;
+  bottom: -14px;
+  background: #000;
+}
+
 .products-page .reset-filter-btn {
   position: relative;
   font-weight: 500;
@@ -4015,6 +4038,39 @@ button {
   background-image: url(../../../img/svg/products-page/reset.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.products-page__pagination .pagination-widgets__pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 69px;
+  margin-left: 280px;
+}
+
+.products-page__pagination .pagination-widgets__link {
+  display: inline-block;
+  text-align: center;
+  width: 26px;
+  height: 26px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  border-radius: 20px;
+}
+
+.products-page__pagination .pagination-widgets__link--active {
+  color: #ffffff;
+  background: #ff8219;
+}
+
+.products-page__pagination .pagination-widgets__page {
+  margin-right: 8px;
+}
+
+.products-page__pagination .pagination-widgets__page:first-child {
+  margin-left: 0;
 }
 
 @media (max-width: 1100px) {
