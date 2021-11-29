@@ -1,4 +1,4 @@
-@media (max-width: 1100px) {
+@media (max-width: 1212px) {
   .header {
     &__top {
       height: 107px;
@@ -8,11 +8,17 @@
       margin-top: 29px;
       img {
         width: 215px;
-        // height: 48px;
       }
     }
     &__phones {
       align-items: center;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.01em;
+    }
+    &__phone {
+      font-size: 16px;
+      line-height: 20px;
     }
     &-search {
       margin-top: 49px;
@@ -20,13 +26,17 @@
     &__buttons {
       margin-top: 31px;
       margin-left: 80px;
+      &-text {
+        font-size: 12px;
+        line-height: 15px;
+      }
     }
   }
 }
 @media (max-width: 1030px) {
   .header {
     &__top {
-      justify-content: space-between;
+      // justify-content: space-between;
       padding-right: 15px;
     }
     &__nav {
@@ -46,6 +56,9 @@
 }
 @media (max-width: 950px) {
   .header {
+    &__top {
+      justify-content: space-between;
+    }
     &__phones {
       display: none;
     }
@@ -121,10 +134,10 @@
     }
   }
 }
-@media (max-width: 374px){
-  .header__logo-wrapper{
+@media (max-width: 374px) {
+  .header__logo-wrapper {
     margin-top: 20px;
-    img{
+    img {
       width: 120px;
     }
   }

@@ -10,22 +10,16 @@
   &__logo-wrapper {
     margin-top: 32px;
     margin-left: 83px;
-    @media (max-width: $tablet-size) {
-      margin-top: 29px;
-      margin-left: 22px;
-      width: 215px;
-      height: 48px;
-      img {
-        width: 215px;
-        // height: 48px;
-      }
-    }
   }
   &__phones {
     margin-left: 41px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
     @media (max-width: $tablet-size) {
       margin-left: 23px;
     }
@@ -48,10 +42,11 @@
     display: none;
   }
   &-search {
-    margin: 62px 0 0 21px;
+    margin: 62px 0 0 24px;
     position: relative;
     @media (max-width: $tablet-size) {
       margin-top: 49px;
+      margin-left: 21px;
     }
     @media (max-width: $phone-size) {
       margin-left: 19px;
@@ -61,7 +56,7 @@
       width: 252px;
       height: 28px;
       border-radius: 18px;
-      padding-left: 10px;
+      padding-left: 11px;
       font-weight: 400;
       @media (max-width: $tablet-size) {
         width: 266px;
@@ -97,7 +92,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-left: 14px;
+      margin-left: 15px;
       &:first-child {
         margin-left: 0;
       }
@@ -135,7 +130,7 @@
         text-align: center;
       }
       &-icon {
-        height: 28px;
+        height: 30px;
         width: 36px;
         margin-bottom: 2px;
         margin-top: 1px;
@@ -147,14 +142,14 @@
       line-height: 17.07px;
     }
   }
-  &__mobile-menu-btn{
+  &__mobile-menu-btn {
     padding: 0;
     background: transparent;
     width: 30px;
     height: 22px;
     cursor: pointer;
     display: none;
-    @media (max-width: $phone-size){
+    @media (max-width: $phone-size) {
       display: block;
       margin-top: 21px;
       margin-left: 23px;
@@ -170,9 +165,13 @@
     &-list {
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      max-width: 935px;
+      width: 100%;
+      margin-left: 13px;
     }
     &-item {
-      margin-left: 32px;
+      // margin-left: 31px;
       &:first-child {
         margin-left: 0;
       }
@@ -182,6 +181,8 @@
       line-height: 21.94px;
       font-weight: 500;
       font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
       @media (max-width: $tablet-size) {
         font-size: 16px;
       }

@@ -1,4 +1,5 @@
 .recommendations {
+  position: relative;
   padding-top: 100px;
   padding-bottom: 95px;
   &__title {
@@ -8,13 +9,14 @@
     line-height: 49px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
+    margin-left: 36px;
   }
   &__wrapper {
     margin-left: 113px;
     padding-top: 51px;
     display: flex;
   }
-  &__item{
+  &__item {
     margin-left: 50px;
     &:first-child {
       margin-left: 0;
@@ -183,6 +185,25 @@
         border-radius: 50%;
         color: #fff;
       }
+    }
+  }
+  &__arrow {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    background: $orange;
+    border-radius: 20px;
+    &-prev {
+      left: 277px;
+      top: 345px;
+    }
+    &-next {
+      transform: rotate(180deg);
+      right: 277px;
+      top: 345px;
     }
   }
 }
