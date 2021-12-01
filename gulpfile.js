@@ -71,7 +71,7 @@ function styles() {
     // 'node_modules/normalize-css/normalize.css',
     // 'node_modules/slick-carousel/slick/slick.scss'
   ])
-    .pipe(scss({ outputStyle: 'expanded' }))
+    .pipe(scss({ outputStyle: 'compressed' }))
     .pipe(concat('style.min.css'))
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 10 version'],
@@ -98,7 +98,7 @@ function build() {
     'app/fonts/**/*',
     'app/js/main.min.js',
     'app/js/libs.min.js', 
-    'app/*html'
+    'app/**/*html'
   ], { base: 'app' })
     .pipe(dest('dist'))
 }

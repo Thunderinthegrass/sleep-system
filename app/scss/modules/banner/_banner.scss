@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border-top: 1px solid transparent;
   @media (max-width: $tablet-size) {
     height: 354px;
     max-width: 911px;
@@ -21,13 +22,13 @@
     font-size: 50px;
     font-weight: 700;
     margin-left: 60px;
-    margin-top: 103px;
+    margin-top: 123px;
     letter-spacing: -2.5px;
     line-height: 58px;
     color: #fff;
     @media (max-width: $tablet-size) {
       font-size: 42px;
-      margin-top: 86px;
+      margin-top: 105px;
       margin-left: 55px;
       line-height: 53px;
       letter-spacing: -0.6px;

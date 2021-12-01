@@ -15,6 +15,7 @@
     margin-left: 113px;
     padding-top: 51px;
     display: flex;
+    position: relative;
   }
   &__item {
     margin-left: 50px;
@@ -197,13 +198,13 @@
     background: $orange;
     border-radius: 20px;
     &-prev {
-      left: 277px;
-      top: 345px;
+      left: -77px;
+      top: 197px;
     }
     &-next {
       transform: rotate(180deg);
-      right: 277px;
-      top: 345px;
+      right: 37px;
+      top: 197px;
     }
   }
 }

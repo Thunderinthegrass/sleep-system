@@ -36,7 +36,6 @@
 @media (max-width: 1030px) {
   .header {
     &__top {
-      // justify-content: space-between;
       padding-right: 15px;
     }
     &__nav {
@@ -52,6 +51,11 @@
     &__buttons {
       margin-left: 29px;
     }
+  }
+}
+@media (max-width: 960px){
+  .header__nav-list{
+    padding: 0;
   }
 }
 @media (max-width: 950px) {
@@ -104,6 +108,11 @@
     }
   }
 }
+@media (max-width: 635px){
+  .footer__bottom-info{
+    padding-left: 30px;
+  }
+}
 @media (max-width: 580px) {
   .header {
     &__since {
@@ -132,6 +141,11 @@
     &__since {
       margin-right: 0;
     }
+  }
+}
+@media (max-width: 375px){
+  .footer__bottom-info{
+    padding-left: 0;
   }
 }
 @media (max-width: 374px) {
