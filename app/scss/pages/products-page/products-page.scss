@@ -353,6 +353,10 @@
   &__catalog {
     position: relative;
     margin-left: 11px;
+    @media (max-width: 1181px) {
+      padding-right: 60px;
+      margin-left: 73px;
+    }
     @media (max-width: 1126px) {
       margin-left: 73px;
       padding-right: 100px;
@@ -375,7 +379,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
-      @media (max-width: 1120px) {
+      @media (max-width: 1181px) {
         justify-content: space-around;
       }
       @media (max-width: $phone-size) {
@@ -401,7 +405,7 @@
             display: none;
           }
         }
-        @media (max-width: 1120px) {
+        @media (max-width: 1181px) {
           &::before {
             display: none;
           }
