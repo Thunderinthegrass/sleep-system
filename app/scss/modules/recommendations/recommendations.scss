@@ -360,7 +360,9 @@
     top: 0;
     display: none;
     &--active {
-      display: block;
+      @media (max-width: $phone-size){
+        display: block;
+      }
     }
   }
   .add-to-basket__btn {
@@ -376,5 +378,9 @@
     border-radius: 20px;
     padding: 4px 5px;
     background: transparent;
+    display: none;
+    @media (max-width: $phone-size){
+      display: block;
+    }
   }
 }
