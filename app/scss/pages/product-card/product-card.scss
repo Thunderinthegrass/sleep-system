@@ -2,6 +2,7 @@
   &__top {
     margin-left: 73px;
     padding-top: 29px;
+    padding-bottom: 21px;
     display: flex;
     &-slider {
       max-width: 660px;
@@ -102,7 +103,7 @@
     &__price {
       margin-left: 8px;
       position: relative;
-      padding-bottom: 39px;
+      padding-bottom: 38px;
       &-old {
         font-size: 38px;
         line-height: 46px;
@@ -137,7 +138,7 @@
       color: #ffffff;
       background: $orange;
       border-radius: 20px;
-      right: 0;
+      right: 25px;
       top: 5px;
       padding: 0 15px;
     }
@@ -147,7 +148,7 @@
       line-height: 37px;
       letter-spacing: 0.01em;
       margin-left: 8px;
-      padding: 28px 0 25px;
+      padding: 28px 0 24px;
       &::before {
         position: absolute;
         content: "";
@@ -157,9 +158,9 @@
         bottom: 0;
         left: -4px;
       }
-      .size-btn{
+      .size-btn {
         position: absolute;
-        right: 1px;
+        right: 26px;
         top: 31px;
         width: 27px;
         height: 27px;
@@ -167,8 +168,62 @@
         background-image: url(../img/svg/product-card/plus.svg);
       }
     }
-    &__properties{
-      padding-top: 20px;
+    &__properties {
+      padding-top: 26px;
+      padding-bottom: 28px;
+      font-size: 18px;
+      line-height: 22px;
+      margin-left: 4px;
+      display: flex;
+      &-item {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-right: 45px;
+        padding-top: 61px;
+        &::before {
+          background-repeat: no-repeat;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      &-load {
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          right: 25px;
+          top: 1px;
+          width: 42px;
+          height: 58px;
+          background-image: url(../img/svg/product-card/load-icon.svg);
+        }
+      }
+      &-height {
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          right: 8px;
+          top: 4px;
+          width: 48px;
+          height: 54px;
+          background-image: url(../img/svg/product-card/height-icon.svg);
+        }
+      }
+      &-hardness {
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          right: 31px;
+          top: 2px;
+          width: 40px;
+          height: 58px;
+          background-image: url(../img/svg/product-card/hardness-icon.svg);
+        }
+      }
     }
     .add-to-basket-btn {
       color: #fff;
@@ -180,5 +235,145 @@
       border-radius: 20px;
       padding: 14px 59px;
     }
+    &__buttons {
+      display: flex;
+      padding-top: 20px;
+      margin-left: 8px;
+      font-size: 14px;
+      line-height: 17px;
+      color: $orange;
+    }
+    &__button {
+      padding-top: 30px;
+      margin-right: 26px;
+      &::before {
+        background-repeat: no-repeat;
+      }
+      :last-child {
+        margin-right: 0;
+      }
+    }
+    &__share-btn {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        right: 9px;
+        top: 0px;
+        width: 48px;
+        height: 54px;
+        background-image: url(../img/svg/product-card/share-icon.svg);
+      }
+    }
+    &__favorites-btn {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        right: 32px;
+        top: 0px;
+        width: 29px;
+        height: 25px;
+        background-image: url(../img/svg/product-card/favorites-icon.svg);
+      }
+    }
+    &__comparison-btn {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        right: 35px;
+        top: 0px;
+        width: 22px;
+        height: 25px;
+        background-image: url(../img/svg/product-card/compare-icon.svg);
+      }
+    }
+  }
+  &__tabs {
+    padding: 22px 0 46px;
+    box-shadow: 6px 6px 26px 15px rgba(0, 0, 0, 0.08);
+  }
+  .tabs-navigation__item {
+    &--active {
+      color: $orange;
+      border-bottom: 1.5px solid #ff8219;
+    }
+  }
+  .product-card-navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    &__item {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.01em;
+      cursor: pointer;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .tab-benefits {
+    padding-top: 85px;
+    padding-left: 83px;
+    padding-right: 83px;
+    display: flex;
+    flex-direction: column;
+    &__list {
+      display: flex;
+      padding-bottom: 45px;
+    }
+    &__item {
+      position: relative;
+      padding-left: 20px;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.01em;
+      width: 340px;
+      margin-right: 15px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: $orange;
+        left: 0;
+        top: 3px;
+      }
+    }
+  }
+  &__video-review {
+    padding-top: 55px;
+    padding-bottom: 15px;
+    .title {
+      text-align: center;
+      h2 {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 49px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+      }
+    }
+  }
+  &__video-wrapper {
+    width: 854px;
+    margin: 0 auto;
+    margin-top: 55px;
+  }
+  &__video-descr {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    width: 662px;
+    margin: 0 auto;
+    margin-top: 33px;
   }
 }
