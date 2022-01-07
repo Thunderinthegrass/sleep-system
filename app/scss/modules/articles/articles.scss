@@ -65,7 +65,7 @@
           .articles__item {
             width: 548px;
             height: 364px;
-            background-image: url(../../../img/content/articles/article-1.jpg);
+            background-image: url(/img/content/articles/article-1.jpg);
             @media (max-width: $tablet-size-1150) {
               width: 458px;
               height: 305px;
@@ -124,7 +124,7 @@
           .articles__item {
             width: 420px;
             height: 420px;
-            background-image: url(../../../img/content/articles/article-2.jpg);
+            background-image: url(/img/content/articles/article-2.jpg);
             @media (max-width: $tablet-size-1150) {
               width: 352px;
               height: 351px;
@@ -182,7 +182,7 @@
           .articles__item {
             width: 545px;
             height: 410px;
-            background-image: url(../../../img/content/articles/article-3.jpg);
+            background-image: url(/img/content/articles/article-3.jpg);
             @media (max-width: $tablet-size-1150) {
               width: 464px;
               height: 348px;
@@ -234,7 +234,7 @@
           .articles__item {
             width: 376px;
             height: 376px;
-            background-image: url(../../../img/content/articles/article-4.jpg);
+            background-image: url(/img/content/articles/article-4.jpg);
             @media (max-width: $tablet-size-1150) {
               width: 295px;
               height: 293px;
@@ -283,7 +283,7 @@
         height: 22px;
         left: 0;
         bottom: -12px;
-        background-image: url(../../../img/svg/articles-arrow.svg);
+        background-image: url(/img/svg/articles-arrow.svg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;

@@ -10,23 +10,20 @@ function footerMenu() {
 }
 footerMenu();
 
-function tabs(tabItem, tabNavItem) {
-  tabNavItem.forEach((elem, index) => {
-    elem.addEventListener('click', (e) => {
-      for (let i = 0; i < tabNavItem.length; i++) {
-        tabNavItem[i].classList.remove('tabs-navigation__item--active');
-        e.target.classList.add('tabs-navigation__item--active');
-        tabItem[i].classList.remove('tab--active');
-      }
-      tabItem[index].classList.add('tab--active');
-    })
+function mobileMenu() {
+  const mobileBtn = document.querySelector('.header__mobile-menu-btn');
+  const headerNav = document.querySelector('.header__nav');
+  let count = 0;
+
+  mobileBtn.addEventListener('click', () => {
+    if (count === 0) {
+      headerNav.style.display = 'block';
+      count = 1;
+    }
+    else {
+      headerNav.style.display = 'none';
+      count = 0;
+    }
   })
 }
-
-function productCardTabs() {
-  const tabNavItem = document.querySelectorAll('.product-card-navigation__item');
-  const tabBody = document.querySelector('.product-card__tab-body');
-  const tabItem = tabBody.querySelectorAll('.tab');
-  tabs(tabItem, tabNavItem);
-}
-productCardTabs();
+mobileMenu();

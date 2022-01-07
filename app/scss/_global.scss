@@ -109,3 +109,9 @@ button {
     }
   }
 }
+.header__nav + .opacity0{
+  opacity: 0;
+}
+.header__nav + .opacity1{
+  opacity: 1;
+}
